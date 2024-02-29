@@ -131,3 +131,93 @@ And To user Click on search button
 Then To user Select the hotel and click on continue button
 And To user Verify that total-price is being calculated as (price-per- night*no-of- rooms*no-of-days +10% GST”)
 
+
+#11
+Scenario: To check Hotel name, Location, room type, Total Day, price per
+Given To user Launch hotel reservation application using URL as in test data.
+And To user Login to the application using username and password as in test data.
+When To user Select location as in test data.
+And To user Select hotel as in test data.
+And To user Select room type as in test data.
+And To user Select no-of-rooms as in test data.
+And To user Enter check-out-date as in test data.
+And To user Select No-of-adults as in test data.
+And To user Select No-of-children as in test data.
+And To user Click on search button
+Then To user Select the hotel and click on continue button
+And To user  Verify that total-price is being calculated as (price-per- night*no-of-rooms*no-of-days
+
+
+#12
+Scenario: To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page
+Given To user Launch hotel reservation application using URL as in test data.
+And To user Login to the application using username and password as in test data.
+When To user Select location as in test data.
+And To user Select hotel as in test data.
+And To user Select room type as in test data.
+And To user Select no-of-rooms as in test data.
+And To user Enter check-out-date as in test data.
+And To user Select No-of-adults as in test data.
+And To user Select No-of-children as in test data.
+And To user Click on search button
+Then To user Select the hotel and click on continue button
+And Verify that total-price is being calculated as (price-per-night*no-of-rooms*no-of-days
+
+#13
+Scenario: To verify whether the data displayed is same as the selected data in Book hotel page
+Given To user Launch hotel reservation application using URL as in test data.
+And To user Login to the application using username and password as in test data.
+When To user Select location as in test data.
+And To user Select hotel as in test data.
+And To user Select room type as in test data.
+And To user Select no-of-rooms as in test data.
+And To user Enter check-out-date as in test data.
+And To user Select No-of-adults as in test data.
+And To user Select No-of-children as in test data.
+And To user Click on search button
+Then To user Select the hotel and click on continue button
+And Verify that total-price is being calculated as (price-per-night*no-of-rooms*no-of-days
+
+
+#14
+Scenario: To Verify Order number is generated in booking confirmation page
+Given To user Launch hotel reservation application using URL as in test data.
+And To user Login to the application using username and password as in test data.
+When To user Select location as in test data.
+And To user Select hotel as in test data.
+And To user Select room type as in test data.
+And To user Select no-of-rooms as in test data.
+And To user Enter check-out-date as in test data.
+And To user Select No-of-adults as in test data.
+And To user Select No-of-children as in test data.
+And To user Click on search button
+Then To user Select the hotel and click on continue button
+And To user Verify that total-price is being calculated as (price-per-night*no-of-rooms*no-of-days
+
+#15
+Scenario: To verify whether the booked itinerary details are not editable.
+Given To user Launch hotel reservation application using URL as in test data.
+And To user Login to the application using username and password as in test data.
+When To user Select location as in test data.
+And To user Select hotel as in test data.
+And To user Select room type as in test data.
+And To user Select no-of-rooms as in test data.
+And To user Enter check-out-date as in test data.
+And To user Select No-of-adults as in test data.
+And To user Select No-of-children as in test data.
+And To user Click on search button
+Then To user To user Click on Search button. Select the hotel and click on continue button
+And To user Fill the form and click on Book now button.
+And To user Click on My itinerary button
+And To user Verify that the details are not editable
+
+
+
+
+
+
+
+
+
+
+
